@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+}
+
+
+
+.header-nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 40px;
+    padding: 10px 0; 
+}
+
+.nav-links {
+    list-style: none ;
+    display: flex ;
+    gap: 25px;
+    align-items: center;
+    margin: 0 ;
+    padding: 0 ;
+}
+
+.nav-links li {
+    list-style: none ;
+    margin: 0 ;
+}
+
+.nav-links a {
+    text-decoration: none ;
+    color: #555 ;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2d4a22 ;
+}
+
+
+.btn-carrito {
+    background: none;
+    color: #2d4a22;
+    border: 1px solid #2d4a22;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-carrito:hover {
+    background-color: #2d4a22;
+    color: white;
+}
+
+#miCarrusel {
+    width: 100%;
+    border-radius: 0; 
+}
+
+body {
+    font-family: 'Montserrat', sans-serif ;
+}
+
+h1, h2, h3, .logo, .logo a {
+    font-family: 'Playfair Display', serif ;
+    text-decoration: none ;
+}
+
+.logo {
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d4a22;
+}
+
+.logo a {
+    text-decoration: none; 
+    color: inherit;        
+    display: inline-block;
+}
+
+.hero-card {
+    display: flex;
+    max-width: 3000px;
+    height: 500px;
+}
+
+.hero-texto {
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    background: rgb(233, 232, 232);
+
+    /* En esta parte para hacer la linea diagonal tuve que ver un tutorial ya que no podia hacerla */
+    z-index: 2;
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+}
+
+.hero-bloque h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #2d4a22;
+    margin-bottom: 10px;
+}
+
+.btn-explorar {
+    list-style: none;
+    text-decoration: none;
+    background-color: #519362;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-explorar a {
+    text-decoration: none; 
+    color: inherit;        
+    display: inline-block;
+}
+
+.hero-imagen {
+    flex: 1;
+    margin-left: -10%;
+}
+
+.hero-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.catalogo-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.titulo-seccion {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.catalogo-seccion {
+    margin: 40px auto;
+    padding-bottom: 20px;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.info h3 {
+    font-size: 1rem;
+    color: #2d4a22;
+    margin-bottom: 5px;
+}
+
+.precio {
+    font-size: 0.85rem;
+    color: #8db596;
+    font-weight: bold;
+}
+
+.card-footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-add {
+    background-color: #519362;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%; 
+}
+
+.btn-add:hover {
+    background-color: #2d4a22;
+    transform: scale(1.02);
+}
+
+.btn-add:active {
+    transform: scale(0.98);
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+    .grid-productos {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 500px) {
+    .grid-productos {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.cuidado-icono {
+    height: 180px;           
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.descripcion-cuidado {
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.card h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.catalogo-seccion .card {
+    min-height: 400px;
+    justify-content: flex-start; 
+}
+
+footer {
+    background-color: #d1e7d8;
+    color: #2d4a22;            
+    padding: 60px 10% 40px;    
+    margin-top: 80px;
+    border-top: 1px solid #b5d1bd;
+}
+
+.footer_texto {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer_contacto, .footer_acerca_de_nosotros {
+    flex: 1;
+}
+
+.footer h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.footer h2::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #8db596;
+    margin-top: 8px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    color: #3e5f31;
+}
+
+.footer strong {
+    color: #2d4a22;
+}
+
+@media (max-width: 768px) {
+    .footer_texto {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .footer h2::after {
+        margin: 8px auto 0;
+    }
+}
+
+.btn-subir {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #2d4a22; 
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.btn-subir:hover {
+    background-color: #d1e7d8;
+    color: #2d4a22;
+    transform: scale(1.1);
+}
